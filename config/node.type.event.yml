@@ -1,0 +1,17 @@
+uuid: e4922c33-9e66-46e7-8bd3-0a4d7991c321
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Event
+type: event
+description: 'Events can be either internal or come from external sources.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
