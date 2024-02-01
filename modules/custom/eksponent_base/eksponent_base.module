@@ -5,6 +5,6 @@
  */
 function eksponent_base_cron() {
   /** @var \Drupal\eksponent_base\Service\EventsImporter $event_importer */
- // $event_importer = \Drupal::service('events_importer');
- // $event_importer->sync();
+  $event_importer = \Drupal::service('events_importer');
+  $event_importer->sync();
 }

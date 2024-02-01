@@ -1,0 +1,4 @@
+services:
+  events_importer:
+    class: \Drupal\eksponent_base\Service\EventsImporter
+    arguments: ['@entity_type.manager', '@database', '@entity_field.manager', '@http_client', '@file.repository']
