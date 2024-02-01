@@ -96,7 +96,15 @@ class EventsImporter {
       $external_events = Json::decode((string) $response->getBody());;
       // @todo ideally implement some batch processing.
       foreach ($external_events as $external_event) {
-        $external_ids = $this->createEvent($external_event, $external_ids);
+        $query = $this->entityTypeManager->getStorage('node')->getQuery();
+        $nid = $query->accessCheck(FALSE)
+          ->condition('type', 'event', '=')
+          ->condition('field_external_id', $external_event['id'], '=')
+          ->execute();
+        // Only create if not exist already.
+        if (!$nid) {
+          $external_ids = $this->createEvent($external_event, $external_ids);
+        }
       }
     }
     catch (RequestException $e) {
