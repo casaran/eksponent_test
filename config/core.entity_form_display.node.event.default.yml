@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_date
+    - field.field.node.event.field_external_id
+    - field.field.node.event.field_organizer
     - field.field.node.event.field_price
     - field.field.node.event.field_primary_image
     - field.field.node.event.field_tickets
@@ -41,6 +43,24 @@ content:
     weight: 122
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_external_id:
+    type: string_textfield
+    weight: 127
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_organizer:
+    type: entity_reference_autocomplete
+    weight: 126
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_price:
     type: number

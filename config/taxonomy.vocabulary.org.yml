@@ -1,0 +1,8 @@
+uuid: 71156f42-3886-4a76-95e3-9ac2395dc3e8
+langcode: en
+status: true
+dependencies: {  }
+name: Organizer
+vid: org
+description: 'Event organizer'
+weight: 0

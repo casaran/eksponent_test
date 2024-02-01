@@ -1,0 +1,29 @@
+uuid: 986d07bc-2cc7-4f70-9924-98657718f4b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizer
+    - node.type.event
+    - taxonomy.vocabulary.org
+id: node.event.field_organizer
+field_name: field_organizer
+entity_type: node
+bundle: event
+label: Organizer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      org: org
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

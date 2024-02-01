@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_date
+    - field.field.node.event.field_external_id
+    - field.field.node.event.field_organizer
     - field.field.node.event.field_price
     - field.field.node.event.field_primary_image
     - field.field.node.event.field_tickets
@@ -35,6 +37,22 @@ content:
       separator: '-'
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_external_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_organizer:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
     region: content
   field_price:
     type: number_decimal

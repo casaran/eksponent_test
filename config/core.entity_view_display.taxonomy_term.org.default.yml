@@ -1,0 +1,31 @@
+uuid: cd4b453e-817e-4ee2-8e5c-bc495619d184
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.org.field_id
+    - taxonomy.vocabulary.org
+  module:
+    - text
+id: taxonomy_term.org.default
+targetEntityType: taxonomy_term
+bundle: org
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_id:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

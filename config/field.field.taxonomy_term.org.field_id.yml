@@ -1,0 +1,23 @@
+uuid: 18b308b5-ec6f-47bd-b8e7-819909336710
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_id
+    - taxonomy.vocabulary.org
+id: taxonomy_term.org.field_id
+field_name: field_id
+entity_type: taxonomy_term
+bundle: org
+label: Id
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
