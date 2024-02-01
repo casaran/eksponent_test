@@ -1,0 +1,23 @@
+uuid: 6249ad8d-da01-4998-b5d7-2201dcb1f958
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - eksponent
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: eksponent_search_form_wide
+theme: eksponent
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

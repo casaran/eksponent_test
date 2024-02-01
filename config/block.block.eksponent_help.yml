@@ -1,0 +1,22 @@
+uuid: 78edc7d0-2631-441d-9307-a7bad4fe30e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - eksponent
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: eksponent_help
+theme: eksponent
+region: help
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

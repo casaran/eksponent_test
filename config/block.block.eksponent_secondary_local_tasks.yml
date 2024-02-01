@@ -1,0 +1,22 @@
+uuid: ce505bfd-6db9-4e3f-afcf-428455da481d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - eksponent
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: eksponent_secondary_local_tasks
+theme: eksponent
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

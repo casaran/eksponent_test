@@ -1,0 +1,22 @@
+uuid: b8608aef-2f8e-4727-a71b-bea87102bc33
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eksponent
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: eksponent_breadcrumbs
+theme: eksponent
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

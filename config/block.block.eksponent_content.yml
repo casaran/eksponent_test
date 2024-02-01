@@ -1,0 +1,22 @@
+uuid: 1f32d34d-b94c-4535-b4c9-d3c94f502955
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eksponent
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: eksponent_content
+theme: eksponent
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 3ab3884f-c985-491d-bb6e-f17c791ebc13
+langcode: en
+status: true
+dependencies:
+  theme:
+    - eksponent
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: eksponent_primary_admin_actions
+theme: eksponent
+region: highlighted
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

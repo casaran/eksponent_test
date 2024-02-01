@@ -12,6 +12,7 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  date_range_formatter: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
@@ -46,4 +47,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  eksponent: 0
 profile: standard

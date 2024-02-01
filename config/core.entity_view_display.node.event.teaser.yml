@@ -9,8 +9,11 @@ dependencies:
     - field.field.node.event.field_price
     - field.field.node.event.field_primary_image
     - field.field.node.event.field_tickets
+    - image.style.sc200x200
     - node.type.event
   module:
+    - date_range_formatter
+    - image
     - text
     - user
 id: node.event.teaser
@@ -24,15 +27,46 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 3
+    region: content
+  field_date:
+    type: date_range_without_time
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'Y-m-d\TH:i:s'
+      separator: '-'
+      one_day: 'l m.d.Y H\h. - {H}\h.'
+      one_month: 'd - {d} F Y'
+      several_months: 'd F - {d} {F} Y'
+      several_years: 'd F Y - {d} {F} {Y}'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_primary_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: sc200x200
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tickets:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 4
     region: content
 hidden:
-  field_date: true
   field_price: true
-  field_primary_image: true
-  field_tickets: true
