@@ -109,7 +109,6 @@ class EventsImporter {
     }
     catch (RequestException $e) {
       if (!$e->hasResponse()) {
-        print($e);
         throw $e;
       }
       $response = $e->getResponse();
@@ -131,7 +130,7 @@ class EventsImporter {
   }
 
   /**
-   * Get existing events external IDs..
+   * Get existing events external IDs.
    */
   protected function getEventsExternalIds(): array {
     $date = new DrupalDateTime();
