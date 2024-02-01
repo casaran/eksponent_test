@@ -13,6 +13,7 @@ dependencies:
     - node.type.event
   module:
     - date_range_formatter
+    - eksponent_base
     - image
     - text
     - user
@@ -55,11 +56,9 @@ content:
     weight: 0
     region: content
   field_tickets:
-    type: number_integer
+    type: eksponent_base_tickets_number_formatter
     label: hidden
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+    settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content

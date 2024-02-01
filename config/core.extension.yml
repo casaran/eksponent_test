@@ -19,6 +19,7 @@ module:
   devel: 0
   dynamic_page_cache: 0
   editor: 0
+  eksponent_base: 0
   field: 0
   field_ui: 0
   file: 0
