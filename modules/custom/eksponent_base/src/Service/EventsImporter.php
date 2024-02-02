@@ -102,6 +102,7 @@ class EventsImporter {
           ->condition('field_external_id', $external_event['id'], '=')
           ->execute();
         // Only create if not exist already.
+        // Or maybe updating existing content? Depends on requirements.
         if (!$nid) {
           $external_ids = $this->createEvent($external_event, $external_ids);
         }
